@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c251bf9c941512a4683df9018c7abd4b
+guid: 73679f56d3facfc40a71e0b7b7ba1ebf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_idle_0
+      name: PlayerCrouch Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 200
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 517f45aef60fda945aba0a7a81975604
-      internalID: -176162817
+      spriteID: aec6603ca01db7e4eabba02ace0e3074
+      internalID: -218336318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_idle_1
+      name: PlayerCrouch Idle_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 48
         y: 0
-        width: 200
-        height: 200
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e8906f2acc238c4e9c24547d94b0f2b
-      internalID: 1238982688
+      spriteID: 965d9b387bb9cfb4faf9b59d7f59c81f
+      internalID: 1275483686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_idle_2
+      name: PlayerCrouch Idle_2
       rect:
         serializedVersion: 2
-        x: 400
+        x: 96
         y: 0
-        width: 200
-        height: 200
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd475e2b240f15f4693f212b034d7a2f
-      internalID: 498100272
+      spriteID: fe93e6c573103004497c95d6c1f9776a
+      internalID: -602614836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_idle_3
+      name: PlayerCrouch Idle_3
       rect:
         serializedVersion: 2
-        x: 600
+        x: 144
         y: 0
-        width: 200
-        height: 200
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887edde428804ef458a58c3d4b41fd47
-      internalID: 14159247
+      spriteID: c48f8cb67508e7e4085728e371113977
+      internalID: -823977644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerCrouch Idle_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45228c58e0c24524ca10f4f07876e9a8
+      internalID: 1605105169
       vertices: []
       indices: 
       edges: []
@@ -209,7 +230,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2a36e50e8cc5494686b8d89490df21c
+    spriteID: 59073bb10a8bac144b8a14bb664a9f3f
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_idle_0: -176162817
-      Enemy_idle_1: 1238982688
-      Enemy_idle_2: 498100272
-      Enemy_idle_3: 14159247
+      PlayerCrouch Idle_0: -218336318
+      PlayerCrouch Idle_1: 1275483686
+      PlayerCrouch Idle_2: -602614836
+      PlayerCrouch Idle_3: -823977644
+      PlayerCrouch Idle_4: 1605105169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

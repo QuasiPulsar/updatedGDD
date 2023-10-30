@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 5048945903080150471}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17804438, y: 0.229, z: -1.3497258}
+  m_LocalPosition: {x: 0.178, y: 0.229, z: -1.855}
   m_LocalScale: {x: 0.10000001, y: 0.1, z: 0.10000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -256,6 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4df1910414424b98187625dcb843b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 9
+  crouchWalkSpeed: 3
 --- !u!222 &2285084811739427757
 CanvasRenderer:
   m_ObjectHideFlags: 0

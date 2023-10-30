@@ -9,6 +9,13 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private float dirX = 0f;
 
+    public float walkSpeed = 9f; // Normal walk speed
+    public float crouchWalkSpeed = 3f; // Speed while crouch walking
+
+    private bool isGrounded = false;
+
+
+
 
     void Start()
     {
@@ -18,15 +25,18 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * 9f, rb.velocity.y);
+        float speed = Input.GetKey(KeyCode.S) ? crouchWalkSpeed : walkSpeed;
+        rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump"))
+        isGrounded = IsGrounded();
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 14f);
+            rb.velocity = new Vector2(rb.velocity.x, 9f);
         }
        
       
@@ -58,8 +68,35 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("jumping", false);
         }
 
+        if (Input.GetKey(KeyCode.S))
+        {
+            anim.SetBool("crouching", true);
+
+            if (dirX != 0f)
+            {
+                anim.SetBool("crouchwalk", true);
+            }
+            else
+            {
+                anim.SetBool("crouchwalk", false);
+            }
+        }
+        else
+        {
+            anim.SetBool("crouching", false);
+            anim.SetBool("crouchwalk", false);
+        }
+
         
 
+    }
+
+    private bool IsGrounded()
+    {
+        Collider2D collider = GetComponent<Collider2D>();
+        RaycastHit2D hit = Physics2D.Raycast(collider.bounds.center, Vector2.down, collider.bounds.extents.y + 0.1f, LayerMask.GetMask("Ground"));
+
+        return hit.collider != null;
     }
 
 
